@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src",
     "esbuild": "esbuild --bundle --platform=node --target=node18 --outdir=dist ./src/index.js",
-    "pkg": "npm run esbuild && pkg -t node18-macos-arm64 -o ./dist/arrpc ./dist/index.js"
+    "pkg": "pnpm run esbuild && pkg -t node18-macos-arm64 -o ./dist/arrpc ./dist/index.js"
   },
   "repository": {
     "type": "git",
